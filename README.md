@@ -7,6 +7,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+Laravel 8 with LdapRecord framework in ActiveDirectory settings
+
 ## Setup
 
  1. Clone the project
@@ -29,4 +31,5 @@ LDAP_TLS=false
 ```
  7. Run `php artisan key:generate`
  8. Run `php artisan migrate`
- 9. Open site and login with username `einstein` and password `password` (Check [Online LDAP Test Server](https://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/) for more information of the Online LDAP Test Server)
+ 9. Login with `samaccountname` and `password` ActiveDirectory LDAP 
+ ### If you want to import all ldap users run `php artisan ldap:import users`
